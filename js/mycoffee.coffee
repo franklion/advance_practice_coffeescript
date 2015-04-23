@@ -21,7 +21,7 @@ $ ->
   $ '#right-aside-content'
     .html result
 
-git 
+
   ### 點擊動畫按鈕 ###
   $ '#animate'
     .click ->

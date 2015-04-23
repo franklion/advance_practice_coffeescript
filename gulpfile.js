@@ -32,6 +32,9 @@ gulp.task('compile-coffee', function () {
     .pipe(coffeelint.reporter())
     .pipe(coffee())
     .pipe(gulp.dest('dist/assets/js'))
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('dist/assets/js'))
     .pipe(notify({message: 'Coffee task complete'}))
     .pipe(livereload());
 });
