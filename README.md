@@ -5,6 +5,9 @@
 [coffeescript] 語法注意事項
 
 1. 使用縮排tab來判別程式碼是否屬於同一組物件元素
+2. for loop
+3. 註解 comment
+4. 函式宣告
 
 ex: 
 
