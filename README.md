@@ -6,8 +6,9 @@
 
 1. 使用縮排tab來判別程式碼是否屬於同一組物件元素
 
-ex: $ '.main'
+ex: 
 
+		$ '.main'
         .css 'background-color', 'black'
         
 2. for loop
