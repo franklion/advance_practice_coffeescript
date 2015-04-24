@@ -9,7 +9,7 @@
 ex: 
 
 		$ '.main'
-        .css 'background-color', 'black'
+			.css 'background-color', 'black'
         
 2. for loop
 
