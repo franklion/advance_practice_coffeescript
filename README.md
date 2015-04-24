@@ -41,3 +41,33 @@ ex: $ '.main'
     value: 物件中的value
     
     obj: 欲執行迴圈的物件
+
+3. 註解 comment
+
+	a. 使用單一 #
+	
+	b. 使用六個 ### 把一串程式碼包覆起來
+
+		ex: `###
+			  a = 10
+			  b = 50
+			  ###`
+	
+4. 函式宣告
+
+	coffee 預設使用function expression，該函式指定給某一個變數，特點:載入js時候計憶體只儲存該變數，當使用該變數實作函式時候才真正的載入到記憶體中．
+	
+	｀var square = function (x) {
+		
+		return x * x;
+		
+	};｀
+	
+	另一種函式宣告為function declaration，宣告函式的同時記憶體就已經載入所有使用到的變數、物件、陣列...等等．
+	
+	`function square (x) {
+	
+	return x * x;
+	
+	};`
+		
