@@ -4,7 +4,7 @@
 
 [coffeescript] 語法注意事項
 
-1. 使用縮排tab來判別程式碼是否屬於同一組物件元素
+1. 使用縮排 tab 來判別程式碼是否屬於同一組物件元素
 
 	ex: 
 
@@ -50,26 +50,26 @@
 	
 	b. 使用六個 ### 把一串程式碼包覆起來
 
-		ex: `###
-			  a = 10
-			  b = 50
-			  ###`
+	ex: 
+			  
+			  
+		###
+		a = 10
+		b = 50
+		###
+	
 	
 4. 函式宣告
 
-	coffee 預設使用function expression，該函式指定給某一個變數，特點:載入js時候記憶體只先儲存該變數位址，當使用該變數實作函式時候才真正載入函式中所有使用到的變數到記憶體中．
+	coffee 預設使用function expression，該函式指定給某一個變數，特點:載入js時候計憶體只儲存該變數，當使用該變數實作函式時候才真正的載入到記憶體中．
 	
-	｀var square = function (x) {
-		
-		return x * x;
-		
-	};｀
+		var square = function (x) {
+			return x * x;
+		};
 	
 	另一種函式宣告為function declaration，宣告函式的同時記憶體就已經載入所有使用到的變數、物件、陣列...等等．
 	
-	`function square (x) {
-	
-	return x * x;
-	
-	};`
+		function square (x) {
+			return x * x;
+		};
 		
