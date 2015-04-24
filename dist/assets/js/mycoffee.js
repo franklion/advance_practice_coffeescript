@@ -31,11 +31,10 @@
     });
 
     /* 離開 dialog */
-    $('.leave').click(function() {
+    return $('.leave').click(function() {
       $('#show').attr('open', false);
       return $('#wrapper').removeClass('enable-blur').removeClass('unselect');
     });
-    return console.log(result);
   });
 
 }).call(this);

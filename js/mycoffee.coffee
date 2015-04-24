@@ -39,5 +39,3 @@ $ ->
       $ '#wrapper'
         .removeClass 'enable-blur'
         .removeClass 'unselect'
-
-  console.log result
