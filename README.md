@@ -1,8 +1,8 @@
 # advance_practice_coffeescript
 
-功能: 使用coffeescript完成template套版
+###功能: 使用coffeescript完成template套版
 
-demo: http://franklion.github.io/advance_practice_coffeescript/
+###demo: http://franklion.github.io/advance_practice_coffeescript/
 
 [coffeescript] 語法注意事項
 
