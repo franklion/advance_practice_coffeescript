@@ -57,7 +57,7 @@
 	
 4. 函式宣告
 
-	coffee 預設使用function expression，該函式指定給某一個變數，特點:載入js時候計憶體只儲存該變數，當使用該變數實作函式時候才真正的載入到記憶體中．
+	coffee 預設使用function expression，該函式指定給某一個變數，特點:載入js時候記憶體只先儲存該變數位址，當使用該變數實作函式時候才真正載入函式中所有使用到的變數到記憶體中．
 	
 	｀var square = function (x) {
 		
