@@ -2,6 +2,8 @@
 
 功能: 使用coffeescript完成template套版
 
+demo: http://franklion.github.io/advance_practice_coffeescript/
+
 [coffeescript] 語法注意事項
 
 1. 使用縮排 tab 來判別程式碼是否屬於同一組物件元素
