@@ -1,0 +1,46 @@
+/* dialog animate */
+#show {
+  width: 300px;
+  height: 300px;
+  background-color: #b4e7d7;
+  border: none;
+  border-radius: 10px;
+  position: fixed;
+  bottom: -300px;
+
+  @include animation-name(fly);
+  @include animation-iteration-count(1);
+  @include animation-direction(normal);
+  @include animation-timing-function(ease-in-out);
+  @include animation-duration(1s);
+  @include animation-fill-mode(forwards);
+}
+/* 離開dialog */
+.leave {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 24px;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  line-height: 20px;
+}
+/* 叉叉按鈕 */
+.leave:before{ content: "\2716\ ";}
+/* 背景模糊後 限制所有元素無法選取 */
+.unselect {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+/* 模糊背景 */
+.enable-blur {
+  @include animation-name(newBlur);
+  @include animation-timing-function(ease-in-out);
+  @include animation-duration(1s);
+  @include animation-fill-mode(forwards);
+}

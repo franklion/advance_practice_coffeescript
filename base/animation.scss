@@ -1,0 +1,49 @@
+@mixin animation-name ($name) {
+  -webkit-animation-name: $name;
+  -moz-animation-name: $name;
+  animation-name: $name;
+}
+@mixin animation-iteration-count($count) {
+  -webkit-animation-direction: $count;
+  -moz-animation-iteration-count: $count;
+  animation-iteration-count: $count;
+}
+@mixin animation-direction($direction) {
+  -webkit-animation-direction: $direction;
+  -moz-animation-direction: $direction;
+  animation-direction: $direction;
+}
+@mixin animation-timing-function($function) {
+  -webkit-animation-timing-function: $function;
+  -moz-animation-timing-function: $function;
+  animation-timing-function: $function;
+}
+@mixin animation-duration($duration) {
+  -webkit-animation-duration: $duration;
+  -moz-animation-duration: $duration;
+  animation-duration: $duration;
+}
+@mixin animation-fill-mode($mode) {
+  -webkit-animation-fill-mode: $mode;
+  -moz-animation-fill-mode: $mode;
+  animation-fill-mode: $mode;
+}
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+@include keyframes(newBlur) {
+  0% {}
+  100% {filter: blur(5px);}
+}
+@include keyframes(fly) {
+  0% {}
+  100% { bottom: 400px;}
+}

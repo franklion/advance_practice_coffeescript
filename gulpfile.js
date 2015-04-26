@@ -4,6 +4,7 @@
 /* 載入外掛 */
 var gulp = require('gulp'),
   //minifyHtml = require('gulp-minify-html'),
+  sass = require('gulp-ruby-sass'),
   minifyCss = require('gulp-minify-css'),
   uglify = require('gulp-uglify'),
   jshint = require('gulp-jshint'),
@@ -20,6 +21,17 @@ var gulp = require('gulp'),
   cache = require('gulp-cache'),
   livereload = require('gulp-livereload');
 
+/* compile sass */
+gulp.task('compile-styles', function() {
+  return sass('css/mystyle.scss', { style: 'expanded' })
+    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+    .pipe(gulp.dest('dist/assets/css'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('dist/assets/css'))
+    .pipe(notify({ message: 'Styles task complete' }))
+    .pipe(livereload());
+});
 
 /* coffee task */
 gulp.task('compile-coffee', function () {
