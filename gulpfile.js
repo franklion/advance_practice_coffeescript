@@ -62,3 +62,6 @@ gulp.task('watch', function () {
   livereload.listen({ basePath: 'dist' });
   gulp.watch('js/**/*.coffee', ['compile-coffee']);
 });
+
+/* default */
+gulp.task('default', ['compile-styles','compile-coffee']);
