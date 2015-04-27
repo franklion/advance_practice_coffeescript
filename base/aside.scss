@@ -1,0 +1,32 @@
+@mixin aside{
+  height: 800px;
+  background-color: #9fd1ff;
+}
+/* 左邊區塊 */
+#left-aside {
+  width: 20%;
+  margin-top: 5px;
+  float: left;
+  @include aside;
+}
+/* 右邊區塊 */
+#right-aside {
+  width: 30%;
+  margin-top: 5px;
+  float: right;
+  @include aside;
+}
+/* 右邊區塊內容 */
+#right-aside-content{
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 100px;
+  //padding-left: 10px;
+  padding: 10px 0px 10px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
+  background-color: pink;
+}
+#clear {
+  clear:both;
+}

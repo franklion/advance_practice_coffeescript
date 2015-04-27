@@ -5,8 +5,7 @@ $ ->
     website: 'http://www.fashionguide.com.tw',
     img: 'https://piposay.s3.amazonaws.com/pipo/44b226c7-5883-4bc7-9df4-18636eddb23a.png'
 
-  template = $ '#template'
-    .html()
+  template = $('#template').html()
 
   ### template data 替換 ###
   renderer = (data, template) ->
